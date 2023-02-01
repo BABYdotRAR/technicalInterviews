@@ -34,7 +34,11 @@ class Pyramid
     }
 
     #region functionality
-    // Método principal recursivo
+    // Método principal recursivo, imprime el siguiente caractér en la actual fila 'layer'
+    // layer: la capa de la piramide que se está imprmiendo, 1 = punta de la pirámide, height = base de la pirámide
+    // height: la altura deseada de la pirámmide
+    // index: el índice del actual caracter que se va a imprimir en pantalla de la fila 'layer'
+    // preWasStar: booleano que indica si el caractér previo fue un asterisco
     private static void PrintPyramidRecursive(int layer, int height, int index, bool prevWasStar)
     {
         // Si hemos excedido la altura de la pirámide, terminamos
